@@ -9,33 +9,39 @@ html{
 }
 body{
   height: calc(100vh - 8em);
-  padding: 4em;
+  padding: 3em;
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(25,25,25);  
 }
 
-.gamearea {
-  background: url(img/oldmap.jpg);
-  background-position: 0% 0%;
-  width: 50%;
-  height: 50vh;
+#container {
+  width: 95%;
   margin: 0 auto;
-  margin-left: 20vw;
+}
+
+.gamearea {
+  background: url(img/pirates.jpg);
+  background-position: 0% 0%;
+  width: 900px;
+  height: 700px;
+  margin-left: 20px;
+  margin-bottom: 50px;
   background-size: contain;
-  border: 1px solid red;
   display: inline-block;
+  box-sizing: border-box;
 }
 
 button {
   display: inline-block;
-  margin: 20px;
+  margin: 0;
   position: relative;
-  left: 5vw;
-  bottom: 25vw;
-  height: 5vw;
-  width: 15vw;
+  left: 300px;
+  bottom: 300px;
+  height: 100px;
+  width: 300px;
   font-size: 200%;
+  /*add glow*/
 }
 
 a {
@@ -92,8 +98,8 @@ a {
 
 /* Animation */
 .anim-typewriter1{
-  animation: typewriter1 6s steps(44) 1s 1 normal both,
-             blinkTextCursor 1s steps(44) 10 normal;
+  animation: typewriter1 6s steps(37) 1s 1 normal both,
+             blinkTextCursor 1s steps(37) 10 normal;
   border-right: 2px solid transparent;
 }
 
@@ -127,7 +133,7 @@ a {
 
 @keyframes typewriter1{
   from{width: 0;}
-  to{width: 25.3em;}
+  to{width: 23em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
