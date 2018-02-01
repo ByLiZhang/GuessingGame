@@ -21,7 +21,7 @@ body{
   width: 50%;
   height: 50vh;
   margin: 0 auto;
-  margin-left: 25vw;
+  margin-left: 20vw;
   background-size: contain;
   border: 1px solid red;
   display: inline-block;
@@ -38,6 +38,9 @@ button {
   font-size: 200%;
 }
 
+a {
+  text-decoration: none;
+}
 
 .line-1, .line-2, .line-3{
     position: relative;
@@ -47,7 +50,7 @@ button {
     margin-bottom: 20px;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 280%;
-    color: #026b17;
+    color: #01991f;
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
@@ -63,7 +66,8 @@ button {
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 380%;
     color: red;
-    font-style: bold;
+    font-weight: bold;
+    font-style: italic;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
