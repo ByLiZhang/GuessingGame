@@ -13,12 +13,13 @@
   overflow: hidden;
 }*/
 
-#home body{
-  height: calc(100vh - 8em);
+#home body, #game body{
+  /*height: calc(100vh - 8em);*/
   /*padding: 2em;*/
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(25,25,25);  
+  height: 100vh;
   /*background: url(img/pirates.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -32,17 +33,20 @@
 }
 
 
-#home .gamearea {
-  background: url(img/pirates.jpg);
+#home .gamearea, #game .gamearea {
   background-position: 0% 0%;
   width: 650px;
   height: 450px;
   margin-left: 20px;
   margin-bottom: 20px;
-  background-size: contain;
-  background-repeat: no-repeat;
   display: inline-block;
   box-sizing: border-box;
+}
+
+#home body .gamearea {
+    background: url(img/pirates.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #home button.start {
@@ -174,27 +178,43 @@
 
 /*game.html*/
 
-#game .mainarea {
-  border: 1px solid red;
-  height: 
-  background: url();
-  background-position: 0% 0%;
-  width: 900px;
-  height: 700px;
-  margin-left: 20px;
-  margin-bottom: 50px;
-  background-size: contain;
-  display: inline-block;
-  box-sizing: border-box;
+/*#game body {
+  background: url(img/gatekeeper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;  
+}*/
+
+/*#game .upperhalf {
   margin: 0 auto;
+  width: 99%;
+}*/
+
+#game .gamearea {
+  width: 450px;
+  height: 450px;
+  background: url(img/gatekeeper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  border: 1px solid yellow;
+  margin: 0;
+}
+
+#game .weapon1, #game .weapon2 {
+  height: 450px;
+  width: 390px;
+  display: inline-block;
+  border: 1px solid green;
 }
 
 #game #numbers {
     border: 1px solid blue;
-    width: 500px;
-    height: 300px;
-    display: inline-block;
+    /*position: absolute;*/
+    width: 1200px;
+    height: 150px;
+    /*display: inline-block;*/
     vertical-align: top;
+    margin: 0 auto;
   }
 
 #game #numbers button {
