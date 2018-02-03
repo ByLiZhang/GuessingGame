@@ -309,10 +309,6 @@
 }
 
 #game #numbers div.wrapper {
-  width: 130px;
-  height: 40px;
-  padding: 0;
-  margin: 0;
   display: inline;
 }
 
@@ -334,8 +330,53 @@
 }
 
 #game #numbers .frame.f1 {
-  left: 67px;
+  left: 70px;
   top: 15px;
+}
+
+#game #numbers .frame.f2 {
+  left: 290px;
+  top: 15px;
+}
+
+#game #numbers .frame.f3 {
+  left: 70px;
+  top: 165px;
+}
+
+#game #numbers .frame.f4 {
+  left: 290px;
+  top: 165px;
+}
+
+#game #numbers .frame.f5 {
+  left: 70px;
+  top: 315px;
+}
+
+#game #numbers .frame.f6 {
+  right : 170px;
+  top: 15px;
+}
+
+#game #numbers .frame.f7 {
+  left: 1185px;
+  top: 15px;
+}
+
+#game #numbers .frame.f8 {
+  right: 170px;
+  top: 165px;
+}
+
+#game #numbers .frame.f9 {
+  left: 1185px;
+  top: 165px;
+}
+
+#game #numbers .frame.f10 {
+  right: 170px;
+  top: 315px;
 }
 
 /*modal*/
