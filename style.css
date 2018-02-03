@@ -114,22 +114,22 @@
 /* Animation */
 .anim-typewriter1{
   animation: typewriter1 4.4s steps(44) 1s 1 normal both,
-             blinkTextCursor 1s steps(44) 7 normal;
+             blinkTextCursor 0.8s steps(22) 9.7 normal;
   border-right: 2px solid transparent;
 }
 
 .anim-typewriter2{
-  animation: typewriter2 4s steps(29) 1s 1 normal both,
-             blinkTextCursor 1s steps(29) 5 normal;
+  animation: typewriter2 2.7s steps(27) 1s 1 normal both,
+             blinkTextCursor 0.8s steps(27) 5.7 normal;
              border-right: 2px solid transparent;
-  -webkit-animation-delay: 11s; 
+  -webkit-animation-delay: 9.3s; 
 }
 
 .anim-typewriter3{
-  animation: typewriter3 5s steps(38) 1s 1 normal both,
-             blinkTextCursor 1s steps(38) 8 normal;
+  animation: typewriter3 5.4s steps(54) 1s 1 normal both,
+             blinkTextCursor 0.8s steps(38) 8.9 normal;
              border-right: 2px solid transparent;
-  -webkit-animation-delay: 16.2s; 
+  -webkit-animation-delay: 15.3s; 
 }
 
 .anim-typewriter4{
@@ -157,12 +157,12 @@
 
 @keyframes typewriter2{
   from{width: 0;}
-  to{width: 15em;}
+  to{width: 14.8em;}
 }
 
 @keyframes typewriter3{
   from{width: 0;}
-  to{width: 19em;}
+  to{width: 30em;}
 }
 
 @keyframes typewriter4{
