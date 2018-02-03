@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Global */
-* {
+#home *, #game * {
   margin: 0;
   padding: 0;
 }
@@ -168,70 +168,138 @@
 }
 
 #game .upperhalf{
-  width: 70%;
-  min-width: 1400px;
-  margin: 0 auto;
+  width: 80%;
+  min-width: 1350px;
+  margin: 10px auto;
+  box-sizing: border-box;
 }
 
 #game .gamearea {
-  width: 450px;
-  height: 450px;
   background: url(img/gatekeeper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  display: inline-block;
   border: 1px solid yellow;
-  margin: 0;
 }
 
-#game .weapon1, #game .weapon2 {
+#game .weapon1, #game .weapon2, #game .gamearea {
   height: 450px;
-  width: 390px;
+  width: 450px;
   display: inline-block;
   border: 1px solid green;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 #game #numbers {
     border: 1px solid blue;
-    width: 1200px;
+    width: 1350px;
     height: 150px;
     vertical-align: top;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 #numbers > div {
-  width: 800px;
-  margin: 0 auto;
+  width: 680px;
+  margin: 0;
+  display: inline-block;
+  align-items: ;
 }
 
-#game #numbers button {
-  height: 100px;
+#numbers > .rowleft {
+  width: 615px;
+  margin-left: 35px;
+}
+
+#numbers .rowleft button, #numbers .rowright button {
+  height: 95px;
   width: 120px;
   display: inline-block;
   color: red;
-  margin: 6px 3px ;
+  margin: 0;
+  border-width: 0;
+  font-size: 0;
+  background: url(img/roman.jpg);
+  background-size: 700px;
 
   opacity: 0.8;
-  border: 2px solid #eee;
-  
   /*Transition*/
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  
+  -o-transition: all 0.5s ease;  
   /*Reflection*/
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+  /*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));*/
+}
+
+#game #numbers button:nth-of-type(1){
+  margin-left: 10px;
+}
+
+#game #numbers .one {
+  background-position-x: 660px;
+  background-position-y: 19%;
+}
+
+#game #numbers .two {
+  background-position-x: 560px;
+  background-position-y: 19%;
+}
+
+#game #numbers .three {
+  background-position-x: 445px;
+  background-position-y: 19%;
+}
+
+#game #numbers .four {
+  background-position-x: 300px;
+  background-position-y: 19%;
+}
+
+
+#game #numbers .five {
+  background-position-x: 155px;
+  background-position-y: 19%;
+}
+
+#game #numbers .six {
+  background-position-x: 658px;
+  background-position-y: 76%;
+  width: 135px;
+}
+
+#game #numbers .seven {
+  background-position-x: 500px;
+  background-position-y: 76%;
+  width: 140px;
+}
+
+#game #numbers .eight {
+  background-position-x: 330px;
+  background-position-y: 76%;
+  width: 145px;
+}
+
+#game #numbers .nine {
+  background-position-x: 158px;
+  background-position-y: 76%;
+  width: 112px;
+}
+
+#game #numbers .ten {
+  background-position-x: 123px;
+  background-position-y: 76%;
+  width: 100px;
 }
 
 #game #numbers button:hover {  
    opacity: 1;   
    /*Reflection*/
-  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+  /*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));*/
  
    /*Glow*/
-  -webkit-box-shadow: 0px 0px 20px rgba(198,0,0,0.9);
-  -moz-box-shadow: 0px 0px 20px rgba(198,0,0,0.9);
-  box-shadow: 0px 0px 20px rgba(198,0,0,0.9);
+  -webkit-box-shadow: 0px 0px 120px rgba(198,0,0,0.9);
+  -moz-box-shadow: 0px 0px 120px rgba(198,0,0,0.9);
+  box-shadow: 0px 0px 120px rgba(198,0,0,0.9);
 } 
 
 /*modal*/
