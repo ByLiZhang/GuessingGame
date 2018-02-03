@@ -14,7 +14,7 @@ function pick_number() {
 }	
 
 function make_guess() {
-	var guess_input = $(this).text();
+	var guess_input = $(this).val();
 	var the_guess = Number(guess_input).toFixed(0);
 	var image = $('.modal-body>img');
 	var modal = $('#galleryModal');
