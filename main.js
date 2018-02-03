@@ -26,12 +26,12 @@ function make_guess() {
 	var modal_title = $('#galleryModal .modal-title');
 	if (the_guess) {
 		if (the_guess - the_number >= 2) {
-			modal_title.text('A mighty artifact that is! Blown into oblivion this place would be...');
-			image.attr('src', 'img/nuke.jpg');
+			modal_title.text('Power overwhelming! Blown into oblivion this place would be...');
+			image.attr('src', 'img/nuke.gif');
 			modal_header.css('background-color', '#d600f7')
 			modal.modal();
 		} else if (the_guess - the_number === 1) {
-			modal_title.text('Not a bad choice per se. But sometimes, SPEED is KING!');
+			modal_title.text('Quite a nice choice. But sometimes, SPEED is KING!');
 			image.attr('src', 'img/speed.gif');
 			modal_header.css('background-color', '#f7b900')
 			modal.modal();
@@ -57,11 +57,11 @@ function make_guess() {
 	}
 }
 
-function displayImage(){
-		$('h4.modal-title').text('modal test');
-		$('.modal-body>img').attr('src', 'img/chest.jpg');
-		$('#galleryModal').modal();
-}
+// function displayImage(){
+// 		$('h4.modal-title').text('modal test');
+// 		$('.modal-body>img').attr('src', 'img/chest.jpg');
+// 		$('#galleryModal').modal();
+// }
 
 function addModalCloseHandler(){
 	$('.modal-body>img').click(function(){

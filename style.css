@@ -31,6 +31,10 @@
   box-sizing: border-box;
 }
 
+#home div.typewriter p {
+  margin: 0 auto;
+}
+
 #home body .gamearea {
     background: url(img/pirates.jpg);
     background-size: contain;
@@ -109,8 +113,8 @@
 
 /* Animation */
 .anim-typewriter1{
-  animation: typewriter1 6s steps(37) 1s 1 normal both,
-             blinkTextCursor 1s steps(37) 10 normal;
+  animation: typewriter1 4.4s steps(44) 1s 1 normal both,
+             blinkTextCursor 1s steps(44) 7 normal;
   border-right: 2px solid transparent;
 }
 
@@ -144,7 +148,7 @@
 
 @keyframes typewriter1{
   from{width: 0;}
-  to{width: 23em;}
+  to{width: 24em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -189,14 +193,13 @@
   background: url(img/gatekeeper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid yellow;
 }
 
 #game .weapon1, #game .weapon2, #game .gamearea {
   height: 450px;
   width: 450px;
   display: inline-block;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   box-sizing: border-box;
   margin: 0;
   position: relative;
@@ -209,7 +212,7 @@
 }
 
 #game #numbers {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     width: 1350px;
     height: 150px;
     vertical-align: top;
@@ -219,7 +222,7 @@
 
 #numbers > div {
   width: 680px;
-  margin: 0;
+  margin: 30px 0;
   display: inline-block;
 }
 
@@ -254,28 +257,28 @@
 */
 #game #numbers .one {
   background-position-x: 660px;
-  background-position-y: 19%;
+  background-position-y: 18.4%;
 }
 
 #game #numbers .two {
   background-position-x: 560px;
-  background-position-y: 19%;
+  background-position-y: 18.4%;
 }
 
 #game #numbers .three {
   background-position-x: 445px;
-  background-position-y: 19%;
+  background-position-y: 18.4%;
 }
 
 #game #numbers .four {
   background-position-x: 300px;
-  background-position-y: 19%;
+  background-position-y: 18.4%;
 }
 
 
 #game #numbers .five {
   background-position-x: 155px;
-  background-position-y: 19%;
+  background-position-y: 18.4%;
 }
 
 #game #numbers .six {
@@ -355,7 +358,7 @@
 }
 
 #game #numbers .frame.f6 {
-  right : 170px;
+  left: 975px;
   top: 15px;
 }
 
@@ -365,7 +368,7 @@
 }
 
 #game #numbers .frame.f8 {
-  right: 170px;
+  left: 975px;
   top: 165px;
 }
 
@@ -375,7 +378,7 @@
 }
 
 #game #numbers .frame.f10 {
-  right: 170px;
+ left: 975px;
   top: 315px;
 }
 
@@ -394,11 +397,17 @@
   width: 100%;
 }
 
-.modal-title {
+/*#game .modal-header {
+  padding: 20px auto;
+}*/
+
+#game .modal-header .modal-title {
   color: #fff;
-  font-style: bold;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
+  height: 100px;
+  box-sizing: border-box;
+  padding-top: 10px;
 }
 
 /*win.html*/
@@ -425,16 +434,24 @@
   background-position: center;
 }
 
-#win .replay {
+#win .replay, #win .about {
   height: 60px;
   width: 200px;
   font-size: 200%;
   background-color: darkgrey;
   position: absolute;
-  left: 950px;
-  top: 600px;
+  left: 980px;
+  
 }
 
-#win .replay a:hover{
+#win .replay {
+  top: 400px;
+}
+
+#win .about {
+  top: 500px;
+}
+
+#win button a:hover{
   text-decoration: none;
 }
