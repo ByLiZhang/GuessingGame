@@ -50,7 +50,7 @@ function make_guess() {
 			image.attr('src', 'img/cheer.gif');
 			modal_header.css('background-color', '#d60202')
 			modal.modal();
-			setTimeout(redirect, 5000);
+			setTimeout(redirect, 6500);
 		}
 	} else {
 		$('#response_div').text('Please only use a number between 1-10.');
@@ -69,6 +69,11 @@ function addModalCloseHandler(){
 	})
 }
 
+// function newTab() {
+// 	window.open('file:///C:/Users/Samosa/Desktop/lfz/guess/win.html', '_blank');
+// }
+
 function redirect() {
-	window.open('file:///C:/Users/Samosa/Desktop/lfz/guess/home.html', '_blank');
+	document.location.href = 'win.html';
+
 }

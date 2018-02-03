@@ -3,12 +3,12 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Global */
-#home *, #game * {
+#home *, #game *, #win * {
   margin: 0;
   padding: 0;
 }
 
-#home body, #game body{
+#home body, #game body, #win body{
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(25,25,25);  
@@ -20,7 +20,6 @@
   margin: 10px auto;
   position: relative;
 }
-
 
 #home .gamearea, #game .gamearea {
   background-position: 0% 0%;
@@ -50,8 +49,20 @@
   color: red;
   background-color: darkgrey;
   text-align: center;
-  /*add glow*/
 }
+
+#home button.start:hover {  
+   opacity: 1;   
+   background-color: rgb(5,173,30);
+   /*Reflection*/
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+ 
+   /*Glow*/
+  -webkit-box-shadow: 0px 0px 40px rgba(5,173,30,0.9);
+  -moz-box-shadow: 0px 0px 40px rgba(5,173,30,0.9);
+  box-shadow: 0px 0px 40px rgba(5,173,30,0.9);
+} 
+
 
 #home .start > a {
   text-decoration: none;
@@ -331,3 +342,40 @@
   text-align: center;
 }
 
+/*win.html*/
+#win body {
+  min-width: 1000px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+#win p {
+  width: 80%
+  margin: 10px auto;
+  text-align: center;
+  font-size: 350%
+}
+
+#win .reward {
+  background-image: url(img/chest.png);
+  width: 900px;
+  height: 650px;
+  margin: 10px auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#win .replay {
+  height: 60px;
+  width: 200px;
+  font-size: 200%;
+  background-color: darkgrey;
+  position: absolute;
+  left: 950px;
+  top: 600px;
+}
+
+#win .replay a:hover{
+  text-decoration: none;
+}
