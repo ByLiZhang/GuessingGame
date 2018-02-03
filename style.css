@@ -308,7 +308,7 @@
   width: 100px;
 }
 
-#game #numbers .wrapper {
+#game #numbers div.wrapper {
   width: 130px;
   height: 40px;
   padding: 0;
@@ -327,13 +327,15 @@
   box-shadow: 0px 0px 120px rgba(198,0,0,0.9);
 } 
 
-#game #numbers .frame.f1 {
+#game #numbers .frame {
   width: 120px;
   height: 150px;
-  border: 1px dash green;
   position: absolute;
-  left: 78px;
-  top: 18px;
+}
+
+#game #numbers .frame.f1 {
+  left: 67px;
+  top: 15px;
 }
 
 /*modal*/
