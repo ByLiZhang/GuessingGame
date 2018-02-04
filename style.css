@@ -54,7 +54,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 100px; 
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 0px;
 }
 
@@ -130,8 +130,8 @@
 
 /* Animation */
 .anim-typewriter1{
-  animation: typewriter1 4.4s steps(44) 1s 1 normal both,
-             blinkTextCursor 0.8s steps(44) 9.6 normal;
+  animation: typewriter1 4.3s steps(43) 1s 1 normal both,
+             blinkTextCursor 0.8s steps(43) 9.6 normal;
   border-right: 2px solid transparent;
   -webkit-animation-delay: 3s; 
 }
@@ -166,7 +166,7 @@
 
 @keyframes typewriter1{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 23.4em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -185,7 +185,7 @@
 
 @keyframes typewriter4{
   from{width: 0;}
-  to{width: 8.8em;}
+  to{width: 8.6em;}
 }
 
 @keyframes typewriter5{
@@ -432,7 +432,7 @@
 #win body {
   min-width: 1000px;
   width: 90%;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 #win body>p {
@@ -445,7 +445,7 @@
 #win .reward {
   background-image: url(img/chest.png);
   width: 900px;
-  height: 650px;
+  height: 550px;
   margin: 10px auto;
   background-repeat: no-repeat;
   background-size: contain;
