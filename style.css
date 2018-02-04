@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-#home body, #game body, #win body{
+#home body, #game body, #win body, #about body{
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(25,25,25);  
@@ -33,12 +33,19 @@
 
 #home div.typewriter p {
   margin: 0 auto;
+  margin-top: 10px;
 }
+
+/*#home body {
+  margin-top: 10px;
+}*/
 
 #home body .gamearea {
     background: url(img/pirates.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    margin-left: 100px; 
+    margin-top: 40px;
 }
 
 #home button.start {
@@ -57,14 +64,14 @@
 
 #home button.start:hover {  
    opacity: 1;   
-   background-color: rgb(5,173,30);
+   background-color: rgb(5,190,30);
    /*Reflection*/
   -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
  
    /*Glow*/
-  -webkit-box-shadow: 0px 0px 40px rgba(5,173,30,0.9);
-  -moz-box-shadow: 0px 0px 40px rgba(5,173,30,0.9);
-  box-shadow: 0px 0px 40px rgba(5,173,30,0.9);
+  -webkit-box-shadow: 0px 0px 100px rgba(5,173,30,0.9);
+  -moz-box-shadow: 0px 0px 100px rgba(5,173,30,0.9);
+  box-shadow: 0px 0px 50px rgba(5,173,30,0.9);
 } 
 
 
@@ -91,22 +98,22 @@
     font-size: 350%;
     color: red;
     font-weight: bold;
-    /*font-style: italic;*/
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    text-shadow: 1px 1px darkgrey;
 }
 
 .line-5{
-    position: relative;
-    top: 50%;  
-    left: 33%;
+    position: absolute;
+    top: 180px;  
+    left: 750px;
     width: 10em;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 100%;
     color: cyan;
-    text-align: right;
+    /*text-align: right;*/
     white-space: nowrap;
     overflow: hidden;
 }
@@ -114,36 +121,37 @@
 /* Animation */
 .anim-typewriter1{
   animation: typewriter1 4.4s steps(44) 1s 1 normal both,
-             blinkTextCursor 0.8s steps(22) 9.7 normal;
+             blinkTextCursor 0.8s steps(44) 9.6 normal;
   border-right: 2px solid transparent;
+  -webkit-animation-delay: 3s; 
 }
 
 .anim-typewriter2{
   animation: typewriter2 2.7s steps(27) 1s 1 normal both,
              blinkTextCursor 0.8s steps(27) 5.7 normal;
-             border-right: 2px solid transparent;
-  -webkit-animation-delay: 9.3s; 
+  border-right: 2px solid transparent;
+  -webkit-animation-delay: 11.2s; 
 }
 
 .anim-typewriter3{
   animation: typewriter3 5.4s steps(54) 1s 1 normal both,
-             blinkTextCursor 0.8s steps(38) 8.9 normal;
-             border-right: 2px solid transparent;
-  -webkit-animation-delay: 15.3s; 
+             blinkTextCursor 0.8s steps(54) 9.7 normal;
+  border-right: 2px solid transparent;
+  -webkit-animation-delay: 16.3s; 
 }
 
 .anim-typewriter4{
   animation: typewriter4 2s steps(13) 1s 1 normal both,
              blinkTextCursor 1s steps(13) 5 normal;
-             border-right: 2px solid transparent;
-  -webkit-animation-delay: 25.5s; 
+  border-right: 2px solid transparent;
+  -webkit-animation-delay: 25s; 
 }
 
 .anim-typewriter5{
   animation: typewriter5 2s steps(22) 1s 1 normal both,
-             blinkTextCursor 1s steps(22) 8 normal;
-             border-right: 2px solid transparent;
-  -webkit-animation-delay: 31s; 
+             blinkTextCursor 1s steps(22) 20 normal;
+  border-right: 2px solid transparent;
+  -webkit-animation-delay: 30.5s; 
 }
 
 @keyframes typewriter1{
@@ -162,17 +170,17 @@
 
 @keyframes typewriter3{
   from{width: 0;}
-  to{width: 30em;}
+  to{width: 29.5em;}
 }
 
 @keyframes typewriter4{
   from{width: 0;}
-  to{width: 9em;}
+  to{width: 8.8em;}
 }
 
 @keyframes typewriter5{
   from{width: 0;}
-  to{width: 18em;}
+  to{width: 17.5em;}
 }
 
 /*game.html*/
@@ -407,7 +415,7 @@
   text-align: center;
   height: 100px;
   box-sizing: border-box;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 /*win.html*/
@@ -454,4 +462,20 @@
 
 #win button a:hover{
   text-decoration: none;
+}
+
+/*about page*/
+#about body {
+  width: 80%;
+  min-width: 800px;
+  margin: 40px auto;
+  font-size: 1.5em;
+}
+
+#about ul {
+  margin-bottom: 40px;
+}
+
+#about li {
+  margin-bottom: 5px;
 }
