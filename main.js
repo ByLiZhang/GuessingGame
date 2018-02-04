@@ -9,7 +9,6 @@ function initializeApp(){
 	$('#galleryModal .modal-title').text('Remember, balancing power and speed is KEY.  Use the numbers below to select a weapon that suits you the best.');
 	$('#galleryModal .modal-header').css('background-color', '#098c02');
 	$('.modal-body>img').attr('src', 'img/Dayne.gif');
-	// $('.modal-body').css('background', 'url(img/Dayne.gif)');
 	$('#galleryModal').modal();
 }
 
@@ -68,11 +67,6 @@ function make_guess() {
 function winning() {
 	sounds.win.play();
 }
-// function displayImage(){
-// 		$('h4.modal-title').text('modal test');
-// 		$('.modal-body>img').attr('src', 'img/chest.jpg');
-// 		$('#galleryModal').modal();
-// }
 
 function addModalCloseHandler(){
 	$('.modal-body>img').click(function(){
