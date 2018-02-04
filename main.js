@@ -9,6 +9,7 @@ function initializeApp(){
 	$('#galleryModal .modal-title').text('Remember, balancing power and speed is KEY.  Use the numbers below to select a weapon that suits you the best.');
 	$('#galleryModal .modal-header').css('background-color', '#098c02');
 	$('.modal-body>img').attr('src', 'img/Dayne.gif');
+	// $('.modal-body').css('background', 'url(img/Dayne.gif)');
 	$('#galleryModal').modal();
 }
 
@@ -41,7 +42,7 @@ function make_guess() {
 		} else if (the_guess - the_number <= -2) {
 			modal_title.text('What was THAT?! You might as well just use a toothpick!');
 			image.attr('src', 'img/blackknight.gif');
-			modal_header.css('background-color', '#0c4db5')
+			modal_header.css('background-color', '#9bb4ff');
 			modal.modal();
 			sounds.light.play();
 		} else if (the_guess - the_number === -1) {
@@ -78,6 +79,7 @@ function addModalCloseHandler(){
 // function newTab() {
 // 	window.open('file:///C:/Users/Samosa/Desktop/lfz/guess/win.html', '_blank');
 // }
+
 
 function redirect() {
 	document.location.href = 'win.html';
