@@ -2,10 +2,19 @@
 <html id="home">
 <head>
   <title>Intro Page</title>
+  <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
+  <!-- <script type="text/javascript" src="js/howler.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script>
+    var sounds = {
+      open: new Howl({
+        src: ['sounds/jail_cell_door.mp3']
+      })
+    }
     function start() {
-      document.location.href = 'game.html';
+      sounds.open.play();
+      setTimeout(function(){document.location.href = 'game.html';}, 1500);
     }
   </script>
 </head>

@@ -56,6 +56,8 @@ function make_guess() {
 			image.attr('src', 'img/cheer.gif');
 			modal_header.css('background-color', '#d60202')
 			modal.modal();
+			sounds.win.play();
+			setTimeout(winning, 4000);
 			setTimeout(redirect, 7200);
 		}
 	} else {
@@ -63,6 +65,9 @@ function make_guess() {
 	}
 }
 
+function winning() {
+	sounds.win.play();
+}
 // function displayImage(){
 // 		$('h4.modal-title').text('modal test');
 // 		$('.modal-body>img').attr('src', 'img/chest.jpg');
@@ -79,24 +84,27 @@ function addModalCloseHandler(){
 // function newTab() {
 // 	window.open('file:///C:/Users/Samosa/Desktop/lfz/guess/win.html', '_blank');
 // }
-
-
 function redirect() {
 	document.location.href = 'win.html';
 }
 
 var sounds = {
-	hard : new Howl({
-		src: ['sounds/confetti.mp3']
+	// open: new Howl({
+	// 	src: ['sounds/jail_cell_door.mp3']
+	// }),
+	hard: new Howl({
+		src: ['sounds/explosion.mp3']
 	}),
 	medium1: new Howl({
-		src: ['sounds/glimmer.mp3']
+		src: ['sounds/steelsword.mp3']
 	}),
 	medium2: new Howl({
-		src: ['sounds/splits.mp3']
+		src: ['sounds/punches.mp3']
 	}),
 	light: new Howl({
-		src: ['sounds/zig-zag.mp3']
+		src: ['sounds/wv-sword.mp3']
+	}),
+	win: new Howl({
+		src: ['sounds/cheering1.mp3']
 	})
-
 }
