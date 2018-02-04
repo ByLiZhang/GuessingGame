@@ -34,7 +34,7 @@ function make_guess() {
 			modal.modal();
 			sounds.hard.play();
 		} else if (the_guess - the_number === 1) {
-			modal_title.text('A solid choice. But sometimes, swiftness is better!');
+			modal_title.text('A solid choice. But sometimes, speed is better!');
 			image.attr('src', 'img/speed.gif');
 			modal_header.css('background-color', '#f7b900')
 			modal.modal();

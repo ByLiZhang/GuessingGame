@@ -14,6 +14,9 @@
   background-color: rgb(25,25,25);  
   height: 100vh;
   margin-top: 3vh;
+  width: 96%;
+  min-width: 1320px;
+  margin: 0 auto;
 }
 
 #home footer, #game footer, #win footer,  #about footer{
@@ -200,13 +203,13 @@
 /*game.html*/
 
 #game body {
-  min-width: 1400px; 
-  margin: 0 auto; 
+  min-width: 1320px; 
+  margin: 30px auto; 
 }
 
 #game .upperhalf{
   width: 80%;
-  min-width: 1350px;
+  min-width: 1320px;
   margin: 10px auto;
   box-sizing: border-box;
 }
@@ -219,23 +222,27 @@
 
 #game .weapon1, #game .weapon2, #game .gamearea {
   height: 450px;
-  width: 450px;
+  width: 400px;
   display: inline-block;
-  /*border: 1px solid green;*/
+  border: 1px solid green;
   box-sizing: border-box;
   margin: 0;
   position: relative;
   vertical-align: top;
 }
 
+#game .gamearea {
+  width: 450px;
+}
+
 #game .upperhalf img {
   width: 150px;
-  margin: 0 30px;
+  margin: 0 20px;
 }
 
 #game #numbers {
-    /*border: 1px solid blue;*/
-    width: 1350px;
+    border: 1px solid blue;
+    width: 1310px;
     height: 150px;
     vertical-align: top;
     margin: 0 auto;
@@ -250,7 +257,6 @@
 
 #numbers > .rowleft {
   width: 615px;
-  margin-left: 35px;
 }
 
 #numbers .rowleft button, #numbers .rowright button {
@@ -355,53 +361,53 @@
 }
 
 #game #numbers .frame.f1 {
-  left: 70px;
-  top: 15px;
+  left: 35px;
+  top: 30px;
 }
 
 #game #numbers .frame.f2 {
-  left: 290px;
-  top: 15px;
+  left: 235px;
+  top: 30px;
 }
 
 #game #numbers .frame.f3 {
-  left: 70px;
-  top: 165px;
+  left: 35px;
+  top: 183px;
 }
 
 #game #numbers .frame.f4 {
-  left: 290px;
-  top: 165px;
+  left: 235px;
+  top: 183px;
 }
 
 #game #numbers .frame.f5 {
-  left: 70px;
-  top: 315px;
+  left: 35px;
+  top: 330px;
 }
 
 #game #numbers .frame.f6 {
-  left: 975px;
-  top: 15px;
+  left: 887px;
+  top: 30px;
 }
 
 #game #numbers .frame.f7 {
-  left: 1185px;
-  top: 15px;
+  left: 1082px;
+  top: 30px;
 }
 
 #game #numbers .frame.f8 {
-  left: 975px;
-  top: 165px;
+  left: 887px;
+  top: 183px;
 }
 
 #game #numbers .frame.f9 {
-  left: 1185px;
-  top: 165px;
+  left: 1082px;
+  top: 183px;
 }
 
 #game #numbers .frame.f10 {
- left: 975px;
-  top: 315px;
+ left: 887px;
+  top: 330px;
 }
 
 /*modal*/
