@@ -17,8 +17,8 @@
 
 #home footer, #game footer, #win footer,  #about footer{
   width: 500px;
+  height: 30px;
   margin: 0 auto;
-  font-size: 6px;
   text-align: center;
 }
 
@@ -54,7 +54,8 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 100px; 
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 #home button.start {
@@ -434,7 +435,7 @@
   margin: 20px auto;
 }
 
-#win p {
+#win body>p {
   width: 80%
   margin: 10px auto;
   text-align: center;
