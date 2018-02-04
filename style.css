@@ -15,10 +15,11 @@
   height: 100vh;
 }
 
-footer {
+#home footer, #game footer, #win footer,  #about footer{
   width: 500px;
   margin: 0 auto;
-  font-size: 80%;
+  font-size: 6px;
+  text-align: center;
 }
 
 /*home page*/
