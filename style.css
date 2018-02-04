@@ -224,7 +224,7 @@
   height: 450px;
   width: 400px;
   display: inline-block;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   box-sizing: border-box;
   margin: 0;
   position: relative;
@@ -241,7 +241,7 @@
 }
 
 #game #numbers {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     width: 1310px;
     height: 150px;
     vertical-align: top;

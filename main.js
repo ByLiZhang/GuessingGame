@@ -30,13 +30,13 @@ function make_guess() {
 		if (the_guess - the_number >= 2) {
 			modal_title.text('Power overwhelming! Blown into oblivion this place would be...');
 			image.attr('src', 'img/nuke.gif');
-			modal_header.css('background-color', '#d600f7')
+			modal_header.css('background-color', '#9e3c9a');
 			modal.modal();
 			sounds.hard.play();
 		} else if (the_guess - the_number === 1) {
-			modal_title.text('A solid choice. But sometimes, speed is better!');
+			modal_title.text('A solid choice no doubt. But sometimes, speed is KING!');
 			image.attr('src', 'img/speed.gif');
-			modal_header.css('background-color', '#f7b900')
+			modal_header.css('background-color', '#cc8904');
 			modal.modal();
 			sounds.medium2.play();
 		} else if (the_guess - the_number <= -2) {
@@ -48,13 +48,13 @@ function make_guess() {
 		} else if (the_guess - the_number === -1) {
 			modal_title.text('A valiant effort! But Tywin wants you to try a little harder...');
 			image.attr('src', 'img/tenor.gif');
-			modal_header.css('background-color', '#d64f02')
+			modal_header.css('background-color', '#d64f02');
 			modal.modal();
 			sounds.medium1.play();
 		} else {
 			modal_title.text('You did it!!! You\'ve done the impossible!!! That.Was.AMAZING!!!');
 			image.attr('src', 'img/cheer.gif');
-			modal_header.css('background-color', '#d60202')
+			modal_header.css('background-color', '#d60202');
 			modal.modal();
 			sounds.win.play();
 			setTimeout(winning, 4000);
