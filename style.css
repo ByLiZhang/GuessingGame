@@ -13,6 +13,7 @@
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(25,25,25);  
   height: 100vh;
+  margin-top: 3vh;
 }
 
 #home footer, #game footer, #win footer,  #about footer{
@@ -133,7 +134,7 @@
   animation: typewriter1 4.3s steps(43) 1s 1 normal both,
              blinkTextCursor 0.8s steps(43) 9.6 normal;
   border-right: 2px solid transparent;
-  -webkit-animation-delay: 3s; 
+  -webkit-animation-delay: 2s; 
 }
 
 .anim-typewriter2{
@@ -475,7 +476,7 @@
 }
 
 /*about page*/
-#about body {
+#about body section {
   width: 80%;
   min-width: 800px;
   margin: 20px auto;

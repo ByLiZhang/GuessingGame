@@ -6,7 +6,7 @@ function initializeApp(){
 	console.log(the_number);
 	$('button').on('click', make_guess);
 	addModalCloseHandler();
-	$('#galleryModal .modal-title').text('Remember, balancing power and speed is KEY.  Picking the weapon that suits you the best shall help greatly.');
+	$('#galleryModal .modal-title').text('Remember, balancing power and speed is KEY.  Use the numbers below to select a weapon that suits you the best.');
 	$('#galleryModal .modal-header').css('background-color', '#098c02');
 	$('.modal-body>img').attr('src', 'img/Dayne.gif');
 	$('#galleryModal').modal();
@@ -31,21 +31,25 @@ function make_guess() {
 			image.attr('src', 'img/nuke.gif');
 			modal_header.css('background-color', '#d600f7')
 			modal.modal();
+			sounds.hard.play();
 		} else if (the_guess - the_number === 1) {
 			modal_title.text('A solid choice. But sometimes, swiftness is better!');
 			image.attr('src', 'img/speed.gif');
 			modal_header.css('background-color', '#f7b900')
 			modal.modal();
+			sounds.medium2.play();
 		} else if (the_guess - the_number <= -2) {
-			modal_title.text('What was THAT?! You may as well just use a toothpick!');
+			modal_title.text('What was THAT?! You might as well just use a toothpick!');
 			image.attr('src', 'img/blackknight.gif');
 			modal_header.css('background-color', '#0c4db5')
 			modal.modal();
+			sounds.light.play();
 		} else if (the_guess - the_number === -1) {
 			modal_title.text('A valiant effort! But Tywin wants you to try a little harder...');
 			image.attr('src', 'img/tenor.gif');
 			modal_header.css('background-color', '#d64f02')
 			modal.modal();
+			sounds.medium1.play();
 		} else {
 			modal_title.text('You did it!!! You\'ve done the impossible!!! That.Was.AMAZING!!!');
 			image.attr('src', 'img/cheer.gif');
@@ -77,4 +81,20 @@ function addModalCloseHandler(){
 
 function redirect() {
 	document.location.href = 'win.html';
+}
+
+var sounds = {
+	hard : new Howl({
+		src: ['sounds/confetti.mp3']
+	}),
+	medium1: new Howl({
+		src: ['sounds/glimmer.mp3']
+	}),
+	medium2: new Howl({
+		src: ['sounds/splits.mp3']
+	}),
+	light: new Howl({
+		src: ['sounds/zig-zag.mp3']
+	})
+
 }
