@@ -20,7 +20,7 @@
 }
 
 #home .container, #game .container, #win .container{
-  width: 1330px;
+  width: 1320px;
   position: relative;
 }
 
@@ -252,6 +252,7 @@
     vertical-align: top;
     margin: 0 auto;
     box-sizing: border-box;
+    position: relative;
 }
 
 #numbers > div {
@@ -262,6 +263,7 @@
 
 #numbers > .rowleft {
   width: 615px;
+  /*position: relative;*/
 }
 
 #numbers .rowleft button, #numbers .rowright button {
@@ -366,53 +368,53 @@
 }
 
 #game #numbers .frame.f1 {
-  left: 35px;
-  top: 30px;
+  left: 30px;
+  bottom: 460px;
 }
 
 #game #numbers .frame.f2 {
-  left: 235px;
-  top: 30px;
+  left: 228px;
+  bottom: 460px;
 }
 
 #game #numbers .frame.f3 {
-  left: 35px;
-  top: 183px;
+  left: 30px;
+  bottom: 308px;
 }
 
 #game #numbers .frame.f4 {
-  left: 235px;
-  top: 183px;
+  left: 228px;
+  bottom: 308px;
 }
 
 #game #numbers .frame.f5 {
-  left: 35px;
-  top: 330px;
+  left: 30px;
+  bottom: 156px;
 }
 
 #game #numbers .frame.f6 {
-  left: 887px;
-  top: 30px;
+  left: 882px;
+  bottom: 460px;
 }
 
 #game #numbers .frame.f7 {
-  left: 1082px;
-  top: 30px;
+  left: 1075px;
+  bottom: 460px;
 }
 
 #game #numbers .frame.f8 {
-  left: 887px;
-  top: 183px;
+  left: 882px;
+  bottom: 308px;
 }
 
 #game #numbers .frame.f9 {
-  left: 1082px;
-  top: 183px;
+  left: 1075px;
+  bottom: 308px;
 }
 
 #game #numbers .frame.f10 {
- left: 887px;
-  top: 330px;
+ left: 882px;
+  bottom: 156px;
 }
 
 /*modal*/
