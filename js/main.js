@@ -6,7 +6,7 @@ function initializeApp(){
 	console.log(the_number);
 	$('button').on('click', make_guess);
 	addModalCloseHandler();
-	$('#galleryModal .modal-title').text('Remember, balancing power and speed is KEY.  Use the numbers below to select a weapon that suits you the best.');
+	$('#galleryModal .modal-title').text('Remember, balancing power and speed is KEY.  Click a number below to select a weapon that suits you the best.');
 	$('#galleryModal .modal-header').css('background-color', '#098c02');
 	$('.modal-body>img').attr('src', 'img/Dayne.gif');
 	$('#galleryModal').modal();
