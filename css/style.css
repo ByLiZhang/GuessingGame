@@ -15,8 +15,13 @@
   height: 100vh;
   margin-top: 3vh;
   width: 96%;
-  min-width: 1320px;
+  max-width: 1320px;
   margin: 0 auto;
+}
+
+#home .container, #game .container, #win .container{
+  width: 1330px;
+  position: relative;
 }
 
 #home footer, #game footer, #win footer,  #about footer{
@@ -440,7 +445,7 @@
   margin: 10px auto;
 }
 
-#win body>p {
+#win body #container .win_message {
   width: 80%
   margin: 10px auto;
   text-align: center;
@@ -462,17 +467,17 @@
   width: 200px;
   font-size: 200%;
   background-color: darkgrey;
-  position: absolute;
-  left: 980px;
-  
+  position: relative; 
 }
 
 #win .replay {
-  top: 400px;
+  bottom: 180px;
+  left: 980px;
 }
 
 #win .about {
-  top: 500px;
+  bottom:  80px;
+  left: 772px;
 }
 
 #win button {

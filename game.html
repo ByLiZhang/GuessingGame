@@ -14,61 +14,63 @@
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
 </head>
 <body>
-  <div class="upperhalf">
-	<section class="weapon1">
-		<img src="img/weapons-images/arrow-2.png" alt="arrow image">
-		<img src="img/weapons-images/knife-5.png" alt="dagger image">
-		<img src="img/weapons-images/knife-1.png" alt="knife image">
-		<img src="img/weapons-images/knife-4.png" alt="large knife image">
-		<img src="img/weapons-images/knife-6.png" alt="sword image">
-	</section><section class="gamearea">
-	</section><section class="weapon2">
-		<img src="img/weapons-images/axe-3.png" alt="axe image">
-		<img src="img/weapons-images/axe-4.png" alt="long axe image">
-		<img src="img/weapons-images/axe-9.png" alt="long polearm image">
-		<img src="img/weapons-images/axe-1.png" alt="large axe image">
-		<img src="img/weapons-images/weapon-2.png" alt="3-head maces image">
-	</section>
-  </div>	
-  <div id="numbers">
-	  <div class="rowleft">
-	    <div class="wrapper"><div class="frame f1"></div><button class="one" value="1">1
-	    </button></div><div class="wrapper"><div class="frame f2"></div><button class="two" value="2">2
-	    </button></div><div class="wrapper"><div class="frame f3"></div><button class="three" value="3">3
-	    </button></div><div class="wrapper"><div class="frame f4"></div><button class="four" value="4">4
-	    </button></div><div class="wrapper"><div class="frame f5"></div><button class="five" value="5">5
-	    </button></div>
+	<section id="container">
+	  <div class="upperhalf">
+		<section class="weapon1">
+			<img src="img/weapons-images/arrow-2.png" alt="arrow image">
+			<img src="img/weapons-images/knife-5.png" alt="dagger image">
+			<img src="img/weapons-images/knife-1.png" alt="knife image">
+			<img src="img/weapons-images/knife-4.png" alt="large knife image">
+			<img src="img/weapons-images/knife-6.png" alt="sword image">
+		</section><section class="gamearea">
+		</section><section class="weapon2">
+			<img src="img/weapons-images/axe-3.png" alt="axe image">
+			<img src="img/weapons-images/axe-4.png" alt="long axe image">
+			<img src="img/weapons-images/axe-9.png" alt="long polearm image">
+			<img src="img/weapons-images/axe-1.png" alt="large axe image">
+			<img src="img/weapons-images/weapon-2.png" alt="3-head maces image">
+		</section>
+	  </div>	
+	  <div id="numbers">
+		  <div class="rowleft">
+		    <div class="wrapper"><div class="frame f1"></div><button class="one" value="1">1
+		    </button></div><div class="wrapper"><div class="frame f2"></div><button class="two" value="2">2
+		    </button></div><div class="wrapper"><div class="frame f3"></div><button class="three" value="3">3
+		    </button></div><div class="wrapper"><div class="frame f4"></div><button class="four" value="4">4
+		    </button></div><div class="wrapper"><div class="frame f5"></div><button class="five" value="5">5
+		    </button></div>
+		  </div>
+		  <div class="rowright">    
+		    <div class="wrapper"><div class="frame f6"></div><button class="six" value="6">6
+		    </button></div><div class="wrapper"><div class="frame f7"></div><button class="seven" value="7">7
+		    </button></div><div class="wrapper"><div class="frame f8"></div><button class="eight" value="8">8
+		    </button></div><div class="wrapper"><div class="frame f9"></div><button class="nine" value="9">9
+		    </button></div><div class="wrapper"><div class="frame f10"></div><button class="ten" value="10">10
+		    </button></div>
+		  </div>
 	  </div>
-	  <div class="rowright">    
-	    <div class="wrapper"><div class="frame f6"></div><button class="six" value="6">6
-	    </button></div><div class="wrapper"><div class="frame f7"></div><button class="seven" value="7">7
-	    </button></div><div class="wrapper"><div class="frame f8"></div><button class="eight" value="8">8
-	    </button></div><div class="wrapper"><div class="frame f9"></div><button class="nine" value="9">9
-	    </button></div><div class="wrapper"><div class="frame f10"></div><button class="ten" value="10">10
-	    </button></div>
+
+	  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#galleryModal">Open Modal</button> -->
+
+	  <div class="modal fade" id="galleryModal" role="dialog">
+	    <div class="modal-dialog">
+	    
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title"></h4>
+	        </div>
+	        <div class="modal-body">
+	          <img class="img-responsive center-block">
+	          <!-- <button class="continue">Continue</button> -->
+	        </div>
+	      </div>
+	    </div>
 	  </div>
-  </div>
-
-  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#galleryModal">Open Modal</button> -->
-
-  <div class="modal fade" id="galleryModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"></h4>
-        </div>
-        <div class="modal-body">
-          <img class="img-responsive center-block">
-          <!-- <button class="continue">Continue</button> -->
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <p>&#9400 2017 - <script>document.write(new Date().getFullYear());</script> By.LiZhang LLC. All rights reserved.</p>
-  </footer>
+	  <footer>
+	    <p>&#9400 2017 - <script>document.write(new Date().getFullYear());</script> By.LiZhang LLC. All rights reserved.</p>
+	  </footer>
+	</section>  
 </body>
 </html>
