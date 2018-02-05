@@ -418,7 +418,7 @@
 }
 
 /*modal*/
-#gallery{
+#galleryModal{
   height: 100vh;
 }
 
@@ -490,7 +490,7 @@
 /*about page*/
 #about body section {
   width: 80%;
-  min-width: 800px;
+  min-width: 1000px;
   margin: 20px auto;
   font-size: 1.4em;
 }
