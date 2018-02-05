@@ -54,7 +54,7 @@
 }*/
 
 #home body .gamearea {
-    background: url(img/pirates.jpg);
+    background: url(../img/pirates.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 100px; 
@@ -215,7 +215,7 @@
 }
 
 #game .gamearea {
-  background: url(img/gatekeeper.jpg);
+  background: url(../img/gatekeeper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -267,7 +267,7 @@
   margin: 0;
   border-width: 0;
   font-size: 0;
-  background: url(img/roman.jpg);
+  background: url(../img/roman.jpg);
   background-size: 700px;
 
   opacity: 0.8;
@@ -448,7 +448,7 @@
 }
 
 #win .reward {
-  background-image: url(img/chest.png);
+  background-image: url(../img/chest.png);
   width: 900px;
   height: 550px;
   margin: 10px auto;
