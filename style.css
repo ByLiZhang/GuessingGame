@@ -477,10 +477,7 @@
 
 #win button {
   border-radius: 10px;
-}
-
-#win button a:hover{
-  text-decoration: none;
+  color: rgb(118,41,165);
 }
 
 /*about page*/
@@ -504,16 +501,16 @@
   height: 40px;
   width: 250px;
   font-size: 100%;
-  color: #fff;
+  color: rgb(176,66,244);
   position: relative;
   left: 80%;
   border-radius: 10px;
 }
 
-#about button:hover {
+#win button:hover, #about button:hover {
   background-color: #6e8ff4;
 }
 
-#about a {
-  text-decoration: none;
+#about h2 {
+  margin: 15px auto;
 }

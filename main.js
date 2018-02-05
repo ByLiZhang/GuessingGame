@@ -55,12 +55,12 @@ function make_guess() {
 			image.attr('src', 'img/cheer.gif');
 			modal_header.css('background-color', '#d60202');
 			modal.modal();
-			sounds.win.play();
+			winning();
 			setTimeout(winning, 4000);
 			setTimeout(redirect, 7200);
 		}
 	} else {
-		$('#response_div').text('Please only use a number between 1-10.');
+		alert('Please use a number.');
 	}
 }
 
