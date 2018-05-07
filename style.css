@@ -3,24 +3,32 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Global */
-* {
+#home *, #game *, #win * {
   margin: 0;
   padding: 0;
 }
 
-#home body, #game body{
+#home body, #game body, #win body, #about body{
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(25,25,25);  
   height: 100vh;
 }
 
+#home footer, #game footer, #win footer,  #about footer{
+  width: 500px;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*home page*/
+
 #home #container {
   width: 95%;
   margin: 10px auto;
   position: relative;
 }
-
 
 #home .gamearea, #game .gamearea {
   background-position: 0% 0%;
@@ -32,10 +40,22 @@
   box-sizing: border-box;
 }
 
+#home div.typewriter p {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/*#home body {
+  margin-top: 10px;
+}*/
+
 #home body .gamearea {
     background: url(img/pirates.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    margin-left: 100px; 
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 #home button.start {
@@ -50,8 +70,20 @@
   color: red;
   background-color: darkgrey;
   text-align: center;
-  /*add glow*/
 }
+
+#home button.start:hover {  
+   opacity: 1;   
+   background-color: rgb(5,190,30);
+   /*Reflection*/
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+ 
+   /*Glow*/
+  -webkit-box-shadow: 0px 0px 100px rgba(5,173,30,0.9);
+  -moz-box-shadow: 0px 0px 100px rgba(5,173,30,0.9);
+  box-shadow: 0px 0px 50px rgba(5,173,30,0.9);
+} 
+
 
 #home .start > a {
   text-decoration: none;
@@ -76,64 +108,65 @@
     font-size: 350%;
     color: red;
     font-weight: bold;
-    /*font-style: italic;*/
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    text-shadow: 1px 1px darkgrey;
 }
 
 .line-5{
-    position: relative;
-    top: 50%;  
-    left: 33%;
+    position: absolute;
+    top: 180px;  
+    left: 750px;
     width: 10em;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 100%;
     color: cyan;
-    text-align: right;
+    /*text-align: right;*/
     white-space: nowrap;
     overflow: hidden;
 }
 
 /* Animation */
 .anim-typewriter1{
-  animation: typewriter1 6s steps(37) 1s 1 normal both,
-             blinkTextCursor 1s steps(37) 10 normal;
+  animation: typewriter1 4.4s steps(44) 1s 1 normal both,
+             blinkTextCursor 0.8s steps(44) 9.6 normal;
   border-right: 2px solid transparent;
+  -webkit-animation-delay: 3s; 
 }
 
 .anim-typewriter2{
-  animation: typewriter2 4s steps(29) 1s 1 normal both,
-             blinkTextCursor 1s steps(29) 5 normal;
-             border-right: 2px solid transparent;
-  -webkit-animation-delay: 11s; 
+  animation: typewriter2 2.7s steps(27) 1s 1 normal both,
+             blinkTextCursor 0.8s steps(27) 5.7 normal;
+  border-right: 2px solid transparent;
+  -webkit-animation-delay: 11.2s; 
 }
 
 .anim-typewriter3{
-  animation: typewriter3 5s steps(38) 1s 1 normal both,
-             blinkTextCursor 1s steps(38) 8 normal;
-             border-right: 2px solid transparent;
-  -webkit-animation-delay: 16.2s; 
+  animation: typewriter3 5.4s steps(54) 1s 1 normal both,
+             blinkTextCursor 0.8s steps(54) 9.7 normal;
+  border-right: 2px solid transparent;
+  -webkit-animation-delay: 16.3s; 
 }
 
 .anim-typewriter4{
   animation: typewriter4 2s steps(13) 1s 1 normal both,
              blinkTextCursor 1s steps(13) 5 normal;
-             border-right: 2px solid transparent;
-  -webkit-animation-delay: 25.5s; 
+  border-right: 2px solid transparent;
+  -webkit-animation-delay: 25s; 
 }
 
 .anim-typewriter5{
   animation: typewriter5 2s steps(22) 1s 1 normal both,
-             blinkTextCursor 1s steps(22) 8 normal;
-             border-right: 2px solid transparent;
-  -webkit-animation-delay: 31s; 
+             blinkTextCursor 1s steps(22) 20 normal;
+  border-right: 2px solid transparent;
+  -webkit-animation-delay: 30.5s; 
 }
 
 @keyframes typewriter1{
   from{width: 0;}
-  to{width: 23em;}
+  to{width: 24em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -142,61 +175,229 @@
 
 @keyframes typewriter2{
   from{width: 0;}
-  to{width: 15em;}
+  to{width: 14.8em;}
 }
 
 @keyframes typewriter3{
   from{width: 0;}
-  to{width: 19em;}
+  to{width: 29.5em;}
 }
 
 @keyframes typewriter4{
   from{width: 0;}
-  to{width: 9em;}
+  to{width: 8.8em;}
 }
 
 @keyframes typewriter5{
   from{width: 0;}
-  to{width: 18em;}
+  to{width: 17.5em;}
 }
 
 /*game.html*/
 
 #game body {
-  min-width: 1400px;  
+  min-width: 1400px; 
+  margin: 0 auto; 
+}
+
+#game .upperhalf{
+  width: 80%;
+  min-width: 1350px;
+  margin: 10px auto;
+  box-sizing: border-box;
 }
 
 #game .gamearea {
-  width: 450px;
-  height: 450px;
   background: url(img/gatekeeper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  display: inline-block;
-  border: 1px solid yellow;
-  margin: 0;
 }
 
-#game .weapon1, #game .weapon2 {
+#game .weapon1, #game .weapon2, #game .gamearea {
   height: 450px;
-  width: 390px;
+  width: 450px;
   display: inline-block;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  vertical-align: top;
+}
+
+#game .upperhalf img {
+  width: 150px;
+  margin: 0 30px;
 }
 
 #game #numbers {
-    border: 1px solid blue;
-    width: 1200px;
+    /*border: 1px solid blue;*/
+    width: 1350px;
     height: 150px;
     vertical-align: top;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
-#game #numbers button {
-  height: 30px;
-  width: 100px;
+#numbers > div {
+  width: 680px;
+  margin: 30px 0;
+  display: inline-block;
+}
+
+#numbers > .rowleft {
+  width: 615px;
+  margin-left: 35px;
+}
+
+#numbers .rowleft button, #numbers .rowright button {
+  height: 95px;
+  width: 120px;
   display: inline-block;
   color: red;
+  margin: 0;
+  border-width: 0;
+  font-size: 0;
+  background: url(img/roman.jpg);
+  background-size: 700px;
+
+  opacity: 0.8;
+  /*Transition*/
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;  
+  /*Reflection*/
+  /*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));*/
+}
+
+/*#game #numbers button:nth-of-type(1){
+  margin-left: 10px;
+}
+*/
+#game #numbers .one {
+  background-position-x: 660px;
+  background-position-y: 18.4%;
+}
+
+#game #numbers .two {
+  background-position-x: 560px;
+  background-position-y: 18.4%;
+}
+
+#game #numbers .three {
+  background-position-x: 445px;
+  background-position-y: 18.4%;
+}
+
+#game #numbers .four {
+  background-position-x: 300px;
+  background-position-y: 18.4%;
+}
+
+
+#game #numbers .five {
+  background-position-x: 155px;
+  background-position-y: 18.4%;
+}
+
+#game #numbers .six {
+  background-position-x: 658px;
+  background-position-y: 76%;
+  width: 135px;
+}
+
+#game #numbers .seven {
+  background-position-x: 500px;
+  background-position-y: 76%;
+  width: 140px;
+}
+
+#game #numbers .eight {
+  background-position-x: 330px;
+  background-position-y: 76%;
+  width: 145px;
+}
+
+#game #numbers .nine {
+  background-position-x: 158px;
+  background-position-y: 76%;
+  width: 112px;
+}
+
+#game #numbers .ten {
+  background-position-x: 123px;
+  background-position-y: 76%;
+  width: 100px;
+}
+
+#game #numbers div.wrapper {
+  display: inline;
+}
+
+#game #numbers .wrapper:hover button, #game #numbers .wrapper:hover .frame {  
+   opacity: 1;   
+   /*Reflection*/
+  /*-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));*/
+ 
+   /*Glow*/
+  -webkit-box-shadow: 0px 0px 120px rgba(198,0,0,0.9);
+  -moz-box-shadow: 0px 0px 120px rgba(198,0,0,0.9);
+  box-shadow: 0px 0px 120px rgba(198,0,0,0.9);
+} 
+
+#game #numbers .frame {
+  width: 120px;
+  height: 150px;
+  position: absolute;
+}
+
+#game #numbers .frame.f1 {
+  left: 70px;
+  top: 15px;
+}
+
+#game #numbers .frame.f2 {
+  left: 290px;
+  top: 15px;
+}
+
+#game #numbers .frame.f3 {
+  left: 70px;
+  top: 165px;
+}
+
+#game #numbers .frame.f4 {
+  left: 290px;
+  top: 165px;
+}
+
+#game #numbers .frame.f5 {
+  left: 70px;
+  top: 315px;
+}
+
+#game #numbers .frame.f6 {
+  left: 975px;
+  top: 15px;
+}
+
+#game #numbers .frame.f7 {
+  left: 1185px;
+  top: 15px;
+}
+
+#game #numbers .frame.f8 {
+  left: 975px;
+  top: 165px;
+}
+
+#game #numbers .frame.f9 {
+  left: 1185px;
+  top: 165px;
+}
+
+#game #numbers .frame.f10 {
+ left: 975px;
+  top: 315px;
 }
 
 /*modal*/
@@ -204,19 +405,105 @@
   height: 100vh;
 }
 
-.modal-body > img{
+#game .modal-body > img{
   max-height: 100%;
-  height: 300px;
+  height: 380px;
   margin: auto;
 }
 
 .modal-dialog{
-  width: 90%;
+  width: 100%;
 }
 
-.modal-title {
+/*#game .modal-header {
+  padding: 20px auto;
+}*/
+
+#game .modal-header .modal-title {
   color: #fff;
-  font-style: bold;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
+  height: 100px;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+
+/*win.html*/
+#win body {
+  min-width: 1000px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+#win body>p {
+  width: 80%
+  margin: 10px auto;
+  text-align: center;
+  font-size: 350%
+}
+
+#win .reward {
+  background-image: url(img/chest.png);
+  width: 900px;
+  height: 650px;
+  margin: 10px auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#win .replay, #win .about {
+  height: 60px;
+  width: 200px;
+  font-size: 200%;
+  background-color: darkgrey;
+  position: absolute;
+  left: 980px;
+  
+}
+
+#win .replay {
+  top: 400px;
+}
+
+#win .about {
+  top: 500px;
+}
+
+#win button a:hover{
+  text-decoration: none;
+}
+
+/*about page*/
+#about body {
+  width: 80%;
+  min-width: 800px;
+  margin: 20px auto;
+  font-size: 1.4em;
+}
+
+#about ul {
+  margin-bottom: 20px;
+}
+
+#about li {
+  margin-bottom: 5px;
+}
+
+#about button {
+  display: inline-block;
+  height: 40px;
+  width: 250px;
+  font-size: 100%;
+  color: #fff;
+  position: relative;
+  left: 80%;
+}
+
+#about button:hover {
+  background-color: #6e8ff4;
+}
+
+#about a {
+  text-decoration: none;
 }
