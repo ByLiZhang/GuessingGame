@@ -6,9 +6,10 @@ function initializeApp(){
 	console.log(the_number);
 	$('button').on('click', make_guess);
 	addModalCloseHandler();
-	$('#galleryModal .modal-title').text('Remember, balancing power and speed is KEY.  Picking the weapon that suits you the best shall help greatly.');
+	$('#galleryModal .modal-title').text('Remember, balancing power and speed is KEY.  Use the numbers below to select a weapon that suits you the best.');
 	$('#galleryModal .modal-header').css('background-color', '#098c02');
 	$('.modal-body>img').attr('src', 'img/Dayne.gif');
+	// $('.modal-body').css('background', 'url(img/Dayne.gif)');
 	$('#galleryModal').modal();
 }
 
@@ -29,28 +30,34 @@ function make_guess() {
 		if (the_guess - the_number >= 2) {
 			modal_title.text('Power overwhelming! Blown into oblivion this place would be...');
 			image.attr('src', 'img/nuke.gif');
-			modal_header.css('background-color', '#d600f7')
+			modal_header.css('background-color', '#9e3c9a');
 			modal.modal();
+			sounds.hard.play();
 		} else if (the_guess - the_number === 1) {
-			modal_title.text('A solid choice. But sometimes, swiftness is better!');
+			modal_title.text('A solid choice no doubt. But sometimes, speed is KING!');
 			image.attr('src', 'img/speed.gif');
-			modal_header.css('background-color', '#f7b900')
+			modal_header.css('background-color', '#cc8904');
 			modal.modal();
+			sounds.medium2.play();
 		} else if (the_guess - the_number <= -2) {
-			modal_title.text('What was THAT?! You may as well just use a toothpick!');
+			modal_title.text('What was THAT?! You might as well just use a toothpick!');
 			image.attr('src', 'img/blackknight.gif');
-			modal_header.css('background-color', '#0c4db5')
+			modal_header.css('background-color', '#9bb4ff');
 			modal.modal();
+			sounds.light.play();
 		} else if (the_guess - the_number === -1) {
 			modal_title.text('A valiant effort! But Tywin wants you to try a little harder...');
 			image.attr('src', 'img/tenor.gif');
-			modal_header.css('background-color', '#d64f02')
+			modal_header.css('background-color', '#d64f02');
 			modal.modal();
+			sounds.medium1.play();
 		} else {
 			modal_title.text('You did it!!! You\'ve done the impossible!!! That.Was.AMAZING!!!');
 			image.attr('src', 'img/cheer.gif');
-			modal_header.css('background-color', '#d60202')
+			modal_header.css('background-color', '#d60202');
 			modal.modal();
+			sounds.win.play();
+			setTimeout(winning, 4000);
 			setTimeout(redirect, 7200);
 		}
 	} else {
@@ -58,6 +65,9 @@ function make_guess() {
 	}
 }
 
+function winning() {
+	sounds.win.play();
+}
 // function displayImage(){
 // 		$('h4.modal-title').text('modal test');
 // 		$('.modal-body>img').attr('src', 'img/chest.jpg');
@@ -74,7 +84,27 @@ function addModalCloseHandler(){
 // function newTab() {
 // 	window.open('file:///C:/Users/Samosa/Desktop/lfz/guess/win.html', '_blank');
 // }
-
 function redirect() {
 	document.location.href = 'win.html';
+}
+
+var sounds = {
+	// open: new Howl({
+	// 	src: ['sounds/jail_cell_door.mp3']
+	// }),
+	hard: new Howl({
+		src: ['sounds/explosion.mp3']
+	}),
+	medium1: new Howl({
+		src: ['sounds/steelsword.mp3']
+	}),
+	medium2: new Howl({
+		src: ['sounds/punches.mp3']
+	}),
+	light: new Howl({
+		src: ['sounds/wv-sword.mp3']
+	}),
+	win: new Howl({
+		src: ['sounds/cheering1.mp3']
+	})
 }

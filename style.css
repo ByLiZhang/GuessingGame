@@ -13,6 +13,10 @@
   font-family: 'Anonymous Pro', monospace;  
   background-color: rgb(25,25,25);  
   height: 100vh;
+  margin-top: 3vh;
+  width: 96%;
+  min-width: 1320px;
+  margin: 0 auto;
 }
 
 #home footer, #game footer, #win footer,  #about footer{
@@ -54,7 +58,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 100px; 
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 0px;
 }
 
@@ -63,13 +67,16 @@
   margin: 0;
   position: absolute;
   left: 800px;
+  top: 300px;
   bottom: 250px;
-  height: 50px;
+  height: 250px;
   width: 250px;
-  font-size: 150%;
+  font-size: 180%;
+  text-shadow: 0px 4px 2px rgba(70, 70, 65, 1);
   color: red;
   background-color: darkgrey;
   text-align: center;
+  border-radius: 50%;
 }
 
 #home button.start:hover {  
@@ -130,10 +137,10 @@
 
 /* Animation */
 .anim-typewriter1{
-  animation: typewriter1 4.4s steps(44) 1s 1 normal both,
-             blinkTextCursor 0.8s steps(44) 9.6 normal;
+  animation: typewriter1 4.3s steps(43) 1s 1 normal both,
+             blinkTextCursor 0.8s steps(43) 9.6 normal;
   border-right: 2px solid transparent;
-  -webkit-animation-delay: 3s; 
+  -webkit-animation-delay: 2s; 
 }
 
 .anim-typewriter2{
@@ -166,7 +173,7 @@
 
 @keyframes typewriter1{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 23.4em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -185,7 +192,7 @@
 
 @keyframes typewriter4{
   from{width: 0;}
-  to{width: 8.8em;}
+  to{width: 8.6em;}
 }
 
 @keyframes typewriter5{
@@ -196,13 +203,13 @@
 /*game.html*/
 
 #game body {
-  min-width: 1400px; 
-  margin: 0 auto; 
+  min-width: 1320px; 
+  margin: 30px auto; 
 }
 
 #game .upperhalf{
   width: 80%;
-  min-width: 1350px;
+  min-width: 1320px;
   margin: 10px auto;
   box-sizing: border-box;
 }
@@ -215,7 +222,7 @@
 
 #game .weapon1, #game .weapon2, #game .gamearea {
   height: 450px;
-  width: 450px;
+  width: 400px;
   display: inline-block;
   /*border: 1px solid green;*/
   box-sizing: border-box;
@@ -224,14 +231,18 @@
   vertical-align: top;
 }
 
+#game .gamearea {
+  width: 450px;
+}
+
 #game .upperhalf img {
   width: 150px;
-  margin: 0 30px;
+  margin: 0 20px;
 }
 
 #game #numbers {
     /*border: 1px solid blue;*/
-    width: 1350px;
+    width: 1310px;
     height: 150px;
     vertical-align: top;
     margin: 0 auto;
@@ -246,7 +257,6 @@
 
 #numbers > .rowleft {
   width: 615px;
-  margin-left: 35px;
 }
 
 #numbers .rowleft button, #numbers .rowright button {
@@ -351,53 +361,53 @@
 }
 
 #game #numbers .frame.f1 {
-  left: 70px;
-  top: 15px;
+  left: 35px;
+  top: 30px;
 }
 
 #game #numbers .frame.f2 {
-  left: 290px;
-  top: 15px;
+  left: 235px;
+  top: 30px;
 }
 
 #game #numbers .frame.f3 {
-  left: 70px;
-  top: 165px;
+  left: 35px;
+  top: 183px;
 }
 
 #game #numbers .frame.f4 {
-  left: 290px;
-  top: 165px;
+  left: 235px;
+  top: 183px;
 }
 
 #game #numbers .frame.f5 {
-  left: 70px;
-  top: 315px;
+  left: 35px;
+  top: 330px;
 }
 
 #game #numbers .frame.f6 {
-  left: 975px;
-  top: 15px;
+  left: 887px;
+  top: 30px;
 }
 
 #game #numbers .frame.f7 {
-  left: 1185px;
-  top: 15px;
+  left: 1082px;
+  top: 30px;
 }
 
 #game #numbers .frame.f8 {
-  left: 975px;
-  top: 165px;
+  left: 887px;
+  top: 183px;
 }
 
 #game #numbers .frame.f9 {
-  left: 1185px;
-  top: 165px;
+  left: 1082px;
+  top: 183px;
 }
 
 #game #numbers .frame.f10 {
- left: 975px;
-  top: 315px;
+ left: 887px;
+  top: 330px;
 }
 
 /*modal*/
@@ -406,18 +416,13 @@
 }
 
 #game .modal-body > img{
-  max-height: 100%;
   height: 380px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .modal-dialog{
   width: 100%;
 }
-
-/*#game .modal-header {
-  padding: 20px auto;
-}*/
 
 #game .modal-header .modal-title {
   color: #fff;
@@ -432,7 +437,7 @@
 #win body {
   min-width: 1000px;
   width: 90%;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 #win body>p {
@@ -445,7 +450,7 @@
 #win .reward {
   background-image: url(img/chest.png);
   width: 900px;
-  height: 650px;
+  height: 550px;
   margin: 10px auto;
   background-repeat: no-repeat;
   background-size: contain;
@@ -470,12 +475,16 @@
   top: 500px;
 }
 
+#win button {
+  border-radius: 10px;
+}
+
 #win button a:hover{
   text-decoration: none;
 }
 
 /*about page*/
-#about body {
+#about body section {
   width: 80%;
   min-width: 800px;
   margin: 20px auto;
@@ -498,6 +507,7 @@
   color: #fff;
   position: relative;
   left: 80%;
+  border-radius: 10px;
 }
 
 #about button:hover {

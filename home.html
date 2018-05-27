@@ -2,12 +2,26 @@
 <html id="home">
 <head>
   <title>Intro Page</title>
+  <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
+  <!-- <script type="text/javascript" src="js/howler.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    var sounds = {
+      open: new Howl({
+        src: ['sounds/jail_cell_door.mp3']
+      })
+    }
+    function start() {
+      sounds.open.play();
+      setTimeout(function(){document.location.href = 'game.html';}, 1500);
+    }
+  </script>
 </head>
 <body>
   <section id="container">
     <div class="typewriter">
-      <p class="line-1 anim-typewriter1">Finally, the voyage has come near its end...</p>
+      <p class="line-1 anim-typewriter1">Finally, the voyage has come near an end...</p>
       <p class="line-2 anim-typewriter2">The treasure shall be yours</p>
       <p class="line-3 anim-typewriter3">if you could pick the right weapon to defeat the guard</p>
       <p class="line-4 anim-typewriter4">CHOOSE WISELY!!!</p>
@@ -15,10 +29,10 @@
     </div>
     <div class="gamearea">  
     </div>
-    <button class="start"><a href="game.html">LET'S DO THIS!</a></button>
+    <button class="start" onclick="start()">LET'S DO THIS!</button>
   </section>
   <footer>
-    <p>by.LiZhang &#9400 2017 - <script>document.write(new Date().getFullYear());</script></p>
+    <p>&#9400 2017 - <script>document.write(new Date().getFullYear());</script> By.LiZhang LLC. All rights reserved.</p>
   </footer>
 </body>
 </html>
