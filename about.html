@@ -3,7 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>About the guess game</title>
-  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<script>
+		function home() {
+	      document.location.href = 'home.html';
+	    }
+	</script>
 </head>
 <body>
 	<section>
@@ -11,14 +16,14 @@
 		<ul>
 			<li>jQuery 2.2.4 for DOM event creation and handling</li>
 			<li>Bootstrap 3.3.6 for modal formatting and display</li>
-			<li>Hower JS 2.0.8 for sound effects</li>
+			<li>Howler JS 2.0.8 for sound effects</li>
 		</ul>
 		<h2>Pieces of knowledge:</h2>
 		<ul>
 			<li>Multi-page architecture simliar to Root MBoutique final project</li>
 			<li>Bootstrap modal display similar to RootJS final image gallery project</li>
 			<li>Positional background image display with a sprite sheet</li>
-			<li>Some CSS animation methods from online search</li>
+			<li>Some CSS animation methods from online research</li>
 		</ul>
 		<h2>Reources: </h2>
 		<ul>
@@ -26,8 +31,8 @@
 			<li>www.freesoundeffects.com</li>
 			<li>Copyright free gif files from various sites</li>
 		</ul>
-		<h3>- Special thanks to Hanran for sets of weaponry image.</h3>
-		<button><a href="home.html">Back to Home page</a></button>
+		<h4>- Special thanks to Hanran for sets of weaponry images.</h4>
+		<button title="Back to Home page" onclick="home()">Play again</button>
 	</section>
 	<footer>
 	    <p>&#9400 2017 - <script>document.write(new Date().getFullYear());</script> By.LiZhang LLC. All rights reserved.</p>

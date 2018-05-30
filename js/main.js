@@ -6,10 +6,9 @@ function initializeApp(){
 	console.log(the_number);
 	$('button').on('click', make_guess);
 	addModalCloseHandler();
-	$('#galleryModal .modal-title').text('Remember, balancing power and speed is KEY.  Use the numbers below to select a weapon that suits you the best.');
+	$('#galleryModal .modal-title').text('Remember, balancing power and speed is KEY.  Click a number below to select a weapon that suits you the best.');
 	$('#galleryModal .modal-header').css('background-color', '#098c02');
 	$('.modal-body>img').attr('src', 'img/Dayne.gif');
-	// $('.modal-body').css('background', 'url(img/Dayne.gif)');
 	$('#galleryModal').modal();
 }
 
@@ -56,23 +55,18 @@ function make_guess() {
 			image.attr('src', 'img/cheer.gif');
 			modal_header.css('background-color', '#d60202');
 			modal.modal();
-			sounds.win.play();
+			winning();
 			setTimeout(winning, 4000);
 			setTimeout(redirect, 7200);
 		}
 	} else {
-		$('#response_div').text('Please only use a number between 1-10.');
+		alert('Please use a number.');
 	}
 }
 
 function winning() {
 	sounds.win.play();
 }
-// function displayImage(){
-// 		$('h4.modal-title').text('modal test');
-// 		$('.modal-body>img').attr('src', 'img/chest.jpg');
-// 		$('#galleryModal').modal();
-// }
 
 function addModalCloseHandler(){
 	$('.modal-body>img').click(function(){
